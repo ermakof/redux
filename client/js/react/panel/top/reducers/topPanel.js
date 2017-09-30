@@ -1,8 +1,7 @@
 /**
- * Created by sinires on 22.07.16.
+ * Created by ermakof on 30.09.17.
  */
 import _ from "underscore";
-import i18next from "i18next";
 import * as C from "./../constants";
 import options from "./../../../../options";
 

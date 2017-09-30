@@ -19,8 +19,8 @@ const getMapNameById = (mapId, listMaps) => {
 
 const initialState = {
     disabled: false,
-    idSelectedMap: null,
-    listMaps: options.panel.top.mapList,
+    idSelectedMap: options.panel.top.map.idSelected,
+    listMaps: options.panel.top.map.list,
     tsUpdate: new Date().getTime(),
     nameSelectedMap: null
 };

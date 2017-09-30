@@ -150,7 +150,7 @@ export const checkedNotifications = (flag) => ({
     flag
 });
 
-export const setSettingValue = (key, value, id)=> ({
+export const setSettingValue = (key, value, id) => ({
     type: C.SET_NEW_SETTING_VALUE_BY_KEY,
     key,
     value,
@@ -255,3 +255,31 @@ export const deactivateMeasureDistance = () => ({
 export const deactivateReferenceMode = () => ({
     type: C.DEACTIVATE_REFERENCE_MODE
 });
+
+export const actionAddAcceptedNotify = (data) => {
+    return {
+        type: C.NOTIFY_EVENTS_ACCEPTED,
+        data
+    }
+};
+
+export const actionAddInfoNotify = (data) => {
+    return {
+        type: C.NOTIFY_EVENTS_INFO,
+        data
+    }
+};
+
+export const actionAddDangerNotify = (data) => {
+    return {
+        type: C.NOTIFY_EVENTS_DANGER,
+        data
+    }
+};
+
+export const togglePanel = (data) => {
+    return {
+        type: C.TOGGLE_PANEL,
+        data
+    }
+}
