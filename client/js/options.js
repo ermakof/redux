@@ -4,6 +4,10 @@
 
 'use strict';
 
+import setDefaultSettingsOptions from "./defaultSettings"
+
+window.clientType = 'admin';
+
 let options = {
     ip: "127.0.0.1",
     panel: {
@@ -35,7 +39,12 @@ let options = {
                 metering: false
             }
         }
+    },
+    settings: {
+        admin: {}
     }
 };
+
+setDefaultSettingsOptions(options.settings[window.clientType]);
 
 export default options;

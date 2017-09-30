@@ -30,6 +30,11 @@ const notification = (state = initialState, action) => {
             newState.data.msg = `${time}: ${action.status ? 'А' : 'Деа'}ктивирован режим RT`;
             return newState;
         }
+        case C.EDITING_DATA__SELECT: {
+            newState.type = C.NOTIFY_EVENTS_INFO;
+            newState.data.msg = `${time}: Выбран пункт меню - ${action.itemSelectedMenu}`;
+            return newState;
+        }
         default:
             return state
     }
