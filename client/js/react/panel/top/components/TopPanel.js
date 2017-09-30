@@ -7,9 +7,6 @@ import CSSModules from "react-css-modules";
 import styles from "../css/style.scss";
 import App from "../containers/App"
 
-import dispatcher from "./../../../../databind/dispatcher";
-import options from "./../../../../options";
-
 class TopPanel extends Component {
 
     constructor(props) {
@@ -20,11 +17,6 @@ class TopPanel extends Component {
     togglePanel(first) {
         const {showPanel,isOpen} = this.props;
         if (!first) showPanel(!isOpen);
-        dispatcher.event(options.eventType.local.panel.toggle, {
-            panelType: 'maps',
-            status: isOpen,
-            first: first
-        });
     }
 
     componentWillMount() {
@@ -60,4 +52,4 @@ class TopPanel extends Component {
     }
 }
 
-export default translate('maps')(CSSModules(TopPanel, styles));
+export default translate('top')(CSSModules(TopPanel, styles));

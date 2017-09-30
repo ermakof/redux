@@ -43,7 +43,7 @@
     "webpack-material-design-icons": "^0.1.0"
   },
   "scripts": {
-    "start": "node_modules/webpack-dev-server/bin/webpack-dev-server.js --progress --inline --hot --content-base assets/",
+    "start": "node_modules/webpack-dev-server/bin/webpack-dev-server.js --progress --inline --hot --content-base assets/"
   },
   "dependencies": {
     "babel-generator": "^6.26.0",
@@ -75,8 +75,6 @@
     "react-addons-css-transition-group": "^15.2.1",
     "react-bootstrap": "^0.30.2",
     "react-bootstrap-table": "^2.3.9",
-    "react-burger-menu": "^1.9.0",
-    "react-burger-nav": "^2.0.2",
     "react-collapse": "^2.2.4",
     "react-color": "^2.13.8",
     "react-css-modules": "^3.7.6",

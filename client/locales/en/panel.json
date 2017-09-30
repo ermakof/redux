@@ -1,0 +1,555 @@
+{
+  "common": {
+    "language": "Localization - EN"
+  },
+  "devices": {
+    "title": "Title",
+    "mac": "MAC address",
+    "status": "Status",
+    "carrier": "Сarrier",
+    "features": "Features",
+    "sensor": "Sensor",
+    "imu": {
+      "title": "IMU",
+      "mode": "Mode",
+      "sensitivity": "Sensitivity"
+    },
+    "no_data": "No data",
+    "ms": "ms",
+    "alt": "Altitude",
+    "lat": "Latitude",
+    "lon": "Longitude",
+    "battery": {
+      "title": "Battery",
+      "charge": "Charge",
+      "voltage": "Voltage"
+    },
+    "location": {
+      "title": "Location",
+      "lon": "Longitude",
+      "lat": "Latitude",
+      "alt": "Altitude"
+    },
+    "state": "State",
+    "cycle": "Alive Cycle",
+    "devtype": "Type",
+    "version": {
+      "title": "Version",
+      "hw": "HardWare",
+      "sw": "SoftWare"
+    },
+    "ts": "Time",
+    "tools": {
+      "edit": "Edit properties",
+      "view": "Edit mode enabled"
+    },
+    "anchor": "Anchor",
+    "repeater": "Repeater",
+    "tag": "Tag",
+    "put": "Put on map",
+    "notSelectedProps": "Not selected props in settings",
+    "remove": "Remove from map",
+    "statusOnMap": {
+      "title": "Status 'On Map':",
+      "yes": "Yes",
+      "no": "No"
+    },
+    "footer": {
+      "save": "Save",
+      "cancel": "Cancel"
+    },
+    "filters": {
+      "CUSTOM": {
+        "title": "Custom",
+        "tooltip": "Custom"
+      },
+      "AREA": {
+        "title": "Area",
+        "tooltip": "Area"
+      },
+      "CHANNEL": {
+        "title": "Channel",
+        "tooltip": "Channel"
+      },
+      "TYPE": {
+        "title": "Type",
+        "tooltip": "Type"
+      },
+      "GROUP": {
+        "title": "Group",
+        "tooltip": "Group"
+      },
+      "MOTION": {
+        "title": "Motion",
+        "tooltip": "Motion"
+      },
+      "ONLINE": {
+        "title": "Online",
+        "tooltip": "Online"
+      },
+      "ON_MAP": {
+        "title": "On Map",
+        "tooltip": "On Map"
+      }
+    }
+  },
+  "areas": {
+    "id": "ID:",
+    "name": "Name:",
+    "type":"Type:",
+    "subtype":"Subtype:",
+    "link_to_map":"Link to map:",
+    "device_list":"List of Devices:"
+  },
+  "features": {
+  },
+  "maps": {
+    "ARM": {
+      "placeHolder": "Interface",
+      "toolTip": "Select interface",
+      "carriers": "Сarriers",
+      "phone": "Phone",
+      "scripts": "Scada",
+      "users": "Users",
+      "admin": "Map"
+    },
+    "language": "Change language",
+    "title": "Panel of maps.",
+    "select": {
+      "title": "Map",
+      "placeHolder": "Select map",
+      "toolTip": "List of maps"
+    },
+    "create": {
+      "title": "Create map",
+      "name": "Name of map",
+      "save": "Save map",
+      "cancel": "Cancel map"
+    },
+    "rootMap": {
+      "title": "Root map",
+      "selected": "Selected map",
+      "toolTip": {
+        "open": "Open root map",
+        "exit": "Exit from root map"
+      }
+    },
+    "homeward": {
+      "toolTip": "Homeward"
+    },
+    "rtMode": {
+      "toolTip": "Error radius & tracing mode",
+      "trace": "Traces",
+      "radius": "Radiuses",
+      "metering": "Metering",
+      "on": "activate",
+      "off": "deactivate"
+    },
+    "modalWindows": {
+      "createMapDialog": {
+        "label": "Choose file for background in PNG format",
+        "label2": "Selected file",
+        "title": "Create new map",
+        "background": "Background",
+        "accept": "Create"
+      },
+      "referencePoint": {
+        "button": {
+          "activate": "Disable reference point mode",
+          "deactivate": "Enable reference point mode"
+        },
+        "accept": "Accept",
+        "title": "Set new position by reference points",
+        "lon" : "Longitude",
+        "lat" : "Latitude",
+        "p1": "Point 1",
+        "p2": "Point 2"
+      },
+      "editDialog": {
+        "map":{
+          "title": "Edit map",
+          "delete_title": "Confirm deleting",
+          "background": "Background",
+          "delete": "Delete map",
+          "update_title": "Confirm updating",
+          "update": "Update map"
+        },
+        "background": {
+          "title": "Edit background",
+          "name": "Name",
+          "alt": "Altitude",
+          "update": "Update",
+          "save": "Save"
+        },
+        "area": {
+          "title": "Editing area",
+          "name": {
+            "header": "Edit name",
+            "input": "Name"
+          },
+          "type": "Select type",
+          "allow_area": "Location is allowed",
+          "deny_area": "Location is not allowed",
+          "link_to_map": "Link to map",
+          "custom_area": "Custom area",
+          "subtype": "Select subtype",
+          "danger_area": "Dangerous area",
+          "alarm_area": "Alarm area",
+          "not_alarm_area": "Not alarm area",
+          "save": "Save"
+        },
+        "graph": {
+          "title": "Editing graph",
+          "name": "Name",
+          "save": "Save"
+        },
+        "graphWeights": {
+          "title": "Editing rage graph",
+          "length": "Value",
+          "save": "Save"
+        },
+        "wall": {
+          "title": "Editing wall",
+          "name": "Name",
+          "save": "Save"
+        },
+        "landmark": {
+          "title": "Edit landmark",
+          "name": "Name",
+          "lat": "Latitude",
+          "lng": "Longitude",
+          "accept": "Accept",
+          "save": "Save"
+        },
+        "anchor": {
+          "title": "Anchor",
+          "add": "Add to map",
+          "remove": "Remove from map",
+          "mode_edit": "Editing",
+          "title": "Name",
+          "save": "Save",
+          "apply": "Apply",
+          "lat": "Latitude ",
+          "lon": "Longitude",
+          "alt": "Altitude",
+          "iaa": "Cycle",
+          "clipDistance": "Distance cut-off",
+          "unsafeDistance": "Unsafe distance"
+        }
+      },
+      "deleteMapDialog": {
+        "title": "Delete current map"
+      }
+    },
+    "settings": {
+      "title": "Settings",
+      "toolTip": "Open setting dialog",
+      "name": "Name of map",
+      "save": "Save",
+      "cancel": "Cancel",
+      "common": {
+        "title": "Common settings",
+        "lng": {
+          "title": "Language",
+          "choose": "Choose language",
+          "ru": "Russian",
+          "en": "English"
+        }
+      },
+      "devices": {
+        "title": "Devices",
+        "header": {
+          "title": "Header",
+          "choose": "Choose header for title",
+          "name": "Name",
+          "MAC": "MAC",
+          "carrier": "Carrier"
+        },
+        "body": {
+          "title": "Common settings",
+          "choose": "Choose visible fields",
+          "name": "Name",
+          "MAC": "MAC",
+          "location": {
+            "title": "Location",
+            "visibility": {
+              "title": "Choose visible fields",
+              "bluetooth": "Show bluetooth location"
+            }
+          },
+          "extendedInfo": {
+            "title": "Choose extended info about device",
+            "visibility": {
+              "title": "Show extended info"
+            }
+          },
+          "visibility": {
+            "devtype": "Type",
+            "mac": "MAC address",
+            "title": "Title",
+            "isOnMap": "On map status",
+            "carrier": "Carrier",
+            "battery": "Battery",
+            "imu": "IMU",
+            "features": "Features",
+            "location": "Location",
+            "state": "State",
+            "cycle": "Alive Cycle",
+            "version": "Version",
+            "ts": "Time"
+          },
+          "cluster": {
+            "title": "Cluster settings",
+            "size": "Cluster size"
+          },
+          "panel": {
+            "title": "Device info update settings",
+            "intervalUpdate": "Update interval"
+          },
+          "rtMode": {
+            "title": "RT mode settings",
+            "max": "Count of devices",
+            "tail": "Length of tail trace"
+          },
+          "status": "Status"
+        }
+      },
+      "area": {
+        "title": "Area",
+        "choose": "Choose visible fields",
+        "id": "ID",
+        "name": "Name",
+        "type": "Type",
+        "subtype": "Subtype",
+        "link_to_map": "Link to map"
+      },
+      "graph": {
+        "title": "Graph",
+        "fontStyle": "Graph size settings",
+        "fontSize": "Font size",
+        "id": "ID",
+        "name": "Name",
+        "type": "Type",
+        "choose": "Choose visible fields"
+      },
+      "event": {
+        "title": "Event",
+        "choose": "Event settings",
+        "visibility": {
+          "popups": {
+            "type": {
+              "_title": "Show events",
+              "_choose": "Choose visible popup events",
+              "warning": "Dangerous",
+              "info": "Information",
+              "success": "Confirm"
+            },
+            "props": {
+              "_title": "Show content of notification",
+              "_choose": "Choose fields",
+              "id": "Event ID",
+              "name": "Event name",
+              "mac": "Device MAC",
+              "deviceName": "Device name",
+              "post": "Post",
+              "area": "Area",
+              "timeConfirmation": "Confirmation time",
+              "batteryLevel": "Battery level",
+              "signalLevel": "Signal level"
+            }
+          },
+          "table": {
+            "column": {
+              "_title": "Show events list",
+              "_choose": "Event columns",
+              "num": "№ order",
+              "id": "Event ID",
+              "mac": "Device MAC",
+              "deviceName": "Device name",
+              "name": "Event name",
+              "time": "Event time",
+              "managerName": "Manager name",
+              "timeConfirmation": "Confirmation time",
+              "area": "Area name"
+            }
+          }
+        }
+      },
+      "filters": {
+        "title": "Filters",
+        "choose": "Filter settings",
+        "visibility": "Select visibility of filters",
+        "tabs": {
+          "count": "Select count visibility tabs"
+        },
+        "type": {
+          "CUSTOM": "Custom",
+          "AREA": "Area",
+          "CHANNEL": "Channel",
+          "TYPE": "Type",
+          "GROUP": "Group",
+          "MOTION": "Motion",
+          "ONLINE": "Online",
+          "ON_MAP": "On Map"
+        }
+      },
+      "select": {
+        "title": "Settings",
+        "items": {
+          "settings": "Settings",
+          "map": "Map",
+          "background": "Background",
+          "anchor": "Anchors",
+          "graph": "Graph",
+          "wall": "Walls",
+          "area": "Areas",
+          "referencePoint": "Reference Points",
+          "geometry": "Geometry",
+          "landmark": "Edit landmarks"
+        }
+      }
+    },
+    "edit": {
+      "open": "Menu",
+      "save": "Save geometry",
+      "not_save": "Don't save geometry",
+      "isEdit": "Edit geometry",
+      "EDIT_ACTION_AREA": "Edit areas",
+      "EDIT_ACTION_GRAPH": "Edit graphs",
+      "EDIT_ACTION_WALL": "Edit walls",
+      "EDIT_ACTION_BOUNDS_BG": "Edit background",
+      "EDIT_ACTION_LANDMARKS": "Edit landmarks",
+      "save_anchor_edit": "Save changes",
+      "not_save_anchor_edit": "Don't save changes",
+      "anchors_edit": "Edit anchors",
+      "EDIT_ACTION_ANCHORS_ADD": "Add on map",
+      "EDIT_ACTION_ANCHORS_REMOVE": "Remove from map",
+      "EDIT_ACTION_ANCHORS_MANUAL": "Edit location"
+    },
+    "info": {
+      "title": "About info",
+      "open": "Open",
+      "close": "Close",
+      "data": {
+        "name": "Name",
+        "host": "Host",
+        "version": "Version"
+      },
+      "toolTip": "About..."
+    },
+    "btn": {
+      "save": {
+        "title": "Save",
+        "tooltip": "Save"
+      },
+      "cancel": {
+        "title": "Cancel",
+        "tooltip": "Cancel"
+      },
+      "exit": {
+        "title": "Exit",
+        "tooltip": "Exit"
+      },
+      "close": {
+        "title": "Close",
+        "tooltip": "Close"
+      },
+      "settings": {
+        "title": "Settings",
+        "tooltip": "Choice of settings"
+      },
+      "edit": {
+        "title": "Edit",
+        "tooltip": "Edit"
+      },
+      "delete": {
+        "title": "Delete",
+        "tooltip": "Delete"
+      },
+      "create": {
+        "title": "Create",
+        "tooltip": "Create"
+      },
+      "measureDistance": {
+        "title": "Measure",
+        "tooltip": "Measure distance"
+      }
+    }
+  },
+  "events": {
+    "counters": {
+      "info": "Information",
+      "warning": "Dangerous",
+      "success": "Confirm"
+    },
+    "buttons": {
+      "settings": {
+        "open": "Open dialog of settings",
+        "close": "Close dialog of settings",
+        "save": "Save settings"
+      },
+      "table": {
+        "open": "Open table of events",
+        "close": "Close table of events"
+      },
+      "popup": {
+        "accept": "Accept"
+      }
+    },
+    "table": {
+      "col": {
+        "num": "№",
+        "id": "Event ID",
+        "mac": "Device MAC",
+        "deviceName": "Device name",
+        "name": "Event name",
+        "time": "Event time",
+        "managerName": "Manager name",
+        "timeConfirmation": "Confirmation time",
+        "area": "Area name"
+      },
+      "messageNoCol": "There is no selected columns in the settings!"
+    },
+    "popup": {
+      "id": "Event ID",
+      "name": "Event name",
+      "mac": "Device MAC",
+      "deviceName": "Device name",
+      "post": "Post",
+      "area": "Area",
+      "time": "Time",
+      "timeConfirmation": "Confirmation time",
+      "signalLevel": "level of signal",
+      "batteryLevel": "Level of charge"
+    }
+  },
+  "dialog": {
+    "createMap": {
+      "title": "Create map",
+      "mapName": "Name of map",
+      "background": "Background",
+      "alt": "Altitude"
+    }
+  },
+  "grouplayers": {
+    "map": "Map",
+    "layer": "Layers",
+    "background": "Background",
+    "osm": "Map",
+    "tags": "Tags",
+    "layers": {
+      "area": "Area",
+      "wall": "Wall",
+      "graph": "Graph",
+      "tile": "Background",
+      "device": "Device",
+      "landmark": "Landmark",
+      "root": "Root layer"
+    }
+  },
+  "controls": {
+    "measure": {
+      "title": "Measure distances"
+    }
+  }
+}

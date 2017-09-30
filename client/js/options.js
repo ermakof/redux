@@ -6,6 +6,28 @@
 
 let options = {
     ip: "127.0.0.1",
+    panel: {
+        top: {
+            settings: {
+                styles: {
+                    color: {
+                        background: "change_background_color_panel",
+                        font: "change_background_color_font"
+                    }
+                },
+            },
+            mapList: [{
+                "map_id": "001",
+                "name": "Карта 1"
+            }, {
+                "map_id": "002",
+                "name": "Карта 2"
+            }, {
+                "map_id": "003",
+                "name": "Карта 3"
+            }]
+        }
+    }
 };
 
 export default options;

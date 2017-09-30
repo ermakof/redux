@@ -5,8 +5,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var config = {
     context: __dirname + "/client",
     entry: {
-        admin: "./js/index.js",
-        viewer: "./js/viewer.js"
+        admin: "./js/index.js"
     },
     output: {
         path: __dirname + '/assets/',
