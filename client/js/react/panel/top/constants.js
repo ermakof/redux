@@ -2,6 +2,8 @@
  * Created by ermak on 01.02.17.
  */
 
+//todo не создаем монстров, надо вынести в папочку и раскидать по файликам
+
 export const OPEN_POPUP_EDIT_DIALOG  = 'OPEN_POPUP_EDIT_DIALOG';
 export const SAVE_POPUP_EDIT_DIALOG  = 'SAVE_POPUP_EDIT_DIALOG';
 export const CLOSE_POPUP_EDIT_DIALOG = 'CLOSE_POPUP_EDIT_DIALOG';

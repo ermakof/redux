@@ -3,6 +3,7 @@
  */
 import * as C from "./constants"
 
+//todo событиея вынести в пакпку и разбить этого монстра на файлы, это жутко смотрится =)))
 export const savePopupEditDialog = (data) => {
     return {
         type: C.SAVE_POPUP_EDIT_DIALOG,

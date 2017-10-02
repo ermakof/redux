@@ -13,6 +13,7 @@ import {
     eventTableField,
 } from "./constants/settings";
 
+//todo архитектурно будет более красиов, если ты вынесешь это в отельную папочку и будешь подключать, потому что на уровне корня это не смотрится
 let setDefaultSettingsOptions = options => {
 
     options[devicesPanelIntervalUpdate] = 100;

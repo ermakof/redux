@@ -36,19 +36,21 @@ class TopPanel extends Component {
             top: isOpen ? "0px" : "-50px"
         };
 
-        return (<div>
-            <input styleName="open" id="top-box" type="checkbox" hidden/>
-            <label styleName='top-btn'
-                   id="topBtn"
-                   htmlFor="top-box"
-                   onClick={()=> {this.togglePanel(false)}}
-                   style={{top: isOpen ? "50px" : "0px"}}>
-                <i className={`fa fa-chevron-${isOpen ? 'up' : 'down'}`}></i>
-            </label>
-            <div styleName='top-panel' id="topPanel" style={custom}>
-                <App />
+        return (
+            <div>
+                <input styleName="open" id="top-box" type="checkbox" hidden/>
+                <label styleName='top-btn'
+                       id="topBtn"
+                       htmlFor="top-box"
+                       onClick={()=> {this.togglePanel(false)}}
+                       style={{top: isOpen ? "50px" : "0px"}}>
+                    <i className={`fa fa-chevron-${isOpen ? 'up' : 'down'}`}></i>
+                </label>
+                <div styleName='top-panel' id="topPanel" style={custom}>
+                    <App />
+                </div>
             </div>
-        </div>)
+        )
     }
 }
 

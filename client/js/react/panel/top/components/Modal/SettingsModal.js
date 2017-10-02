@@ -61,6 +61,7 @@ class Settings extends Component {
         let list = this.state.items;
         let oldList = this.state.old;
 
+        //todo вынести в качестве методов
         function setValue(e) {
             let {name, value} = e.target;
             list[name] = value;

@@ -2,6 +2,7 @@
  * Created by ermakof on 30.09.17.
  */
 
+//todo такой формат вывода констант допустим, но не язвляется ли он черезмрено перегруженнным?
 const _eventVisibilityPopUpField = {
     "id":               "event-visibility-popup-field-id",
     "name":             "event-visibility-popup-field-name",
@@ -61,11 +62,14 @@ const _areaPropsShow = {
     name: "settings-area-field-name",
     id: "settings-area-field-id"
 };
+
 const _graphPropsShow = {
     fontSize: "settings-graph-fontSize"
 };
 
 const _selectedMapId = "selected-map-id";
+
+//toto  почему сразу не импортируешь константы?7
 
 export const eventVisibilityPopUpField = _eventVisibilityPopUpField;
 export const eventTableField = _eventTableField;

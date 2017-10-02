@@ -21,6 +21,7 @@ class EditGroupBtn extends Component {
         const {t, visible, disabled, title, btnProps, idSelectedMap} = this.props;
 
         let rez = null;
+        //todo если хочшеь ханиматбься такой фигей, используй функцимональыне компоненты
         if (visible) {
             let editBtn = {
                 visible: true,

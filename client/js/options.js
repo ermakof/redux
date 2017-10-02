@@ -6,6 +6,7 @@
 
 import setDefaultSettingsOptions from "./defaultSettings"
 
+//todo опять этьлт постыль
 window.clientType = 'admin';
 
 let options = {
