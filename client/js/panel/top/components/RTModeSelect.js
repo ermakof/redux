@@ -8,7 +8,6 @@ import React, {PropTypes, Component} from 'react'
 import {translate} from "react-i18next";
 import 'react-select/dist/react-select.css';
 import ReactTooltip from 'react-tooltip';
-import options from "../../../../options";
 
 import {
     MenuItem,

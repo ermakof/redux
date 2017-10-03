@@ -4,7 +4,7 @@
 import { connect } from 'react-redux'
 import {bindActionCreators} from "redux";
 import TopPanel from '../components/TopPanel'
-import * as actions from '../actions'
+import * as actions from '../actions/panel'
 
 const mapStateToProps = (state, ownProps) => {
     return {

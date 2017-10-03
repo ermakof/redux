@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux';
 import Notification from '../components/Notification'
 
-import * as actions from "../actions";
+import * as actions from "../actions/notify";
 
 const mapStateToProps = (state, ownProps) => {
     return {

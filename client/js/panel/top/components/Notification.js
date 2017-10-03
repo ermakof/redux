@@ -5,8 +5,6 @@ import React from 'react';
 import NotificationSystem from 'react-notification-system';
 import { translate } from 'react-i18next';
 
-import options from "../../../../options"
-
 import * as C from '../constants'
 
 class Notification extends React.Component {

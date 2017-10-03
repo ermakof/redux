@@ -4,10 +4,7 @@
 
 'use strict';
 
-import setDefaultSettingsOptions from "./defaultSettings"
-
-//todo опять этьлт постыль
-window.clientType = 'admin';
+import setDefaultSettingsOptions from "./default/settings"
 
 let options = {
     ip: "127.0.0.1",
@@ -46,6 +43,6 @@ let options = {
     }
 };
 
-setDefaultSettingsOptions(options.settings[window.clientType]);
+setDefaultSettingsOptions(options.settings['admin']);
 
 export default options;

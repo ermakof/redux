@@ -3,16 +3,16 @@
  */
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
-import * as actions from "../actions";
-import SettingsSelect from "../components/SettingsSelect";
+import * as actions from "../actions/panel";
+import App from "../components/App";
 
 const mapStateToProps = (state, ownProps) => {
-    let menu = state.topPanel.selectSettings;
+    let p = state.topPanel;
     return {
-        item: menu.item,
-        list: menu.list,
-        idSelectedMap: state.mapSelect.idSelectedMap
-
+        mapRoot: p.rootMap.isOpen,
+        idSelectedMap: state.mapSelect.idSelectedMap,
+        listMaps: state.mapSelect.listMaps,
+        referencePoint: p.referencePoint.visible
     }
 };
 
@@ -20,9 +20,9 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     return bindActionCreators(actions, dispatch)
 };
 
-const settingsSelect = connect(
+const app = connect(
     mapStateToProps,
     mapDispatchToProps
-)(SettingsSelect);
+)(App);
 
-export default settingsSelect
+export default app

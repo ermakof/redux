@@ -3,14 +3,16 @@
  */
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
-import * as actions from "../actions";
-import RTModeSelect from "../components/RTModeSelect";
+import * as actions from "../actions/editing";
+import SettingsSelect from "../components/SettingsSelect";
 
 const mapStateToProps = (state, ownProps) => {
-    let menu = state.selectRTMode;
+    let menu = state.topPanel.selectSettings;
     return {
         item: menu.item,
-        list: menu.list
+        list: menu.list,
+        idSelectedMap: state.mapSelect.idSelectedMap
+
     }
 };
 
@@ -18,9 +20,9 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     return bindActionCreators(actions, dispatch)
 };
 
-const rtModeSelect = connect(
+const settingsSelect = connect(
     mapStateToProps,
     mapDispatchToProps
-)(RTModeSelect);
+)(SettingsSelect);
 
-export default rtModeSelect
+export default settingsSelect

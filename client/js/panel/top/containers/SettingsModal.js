@@ -1,9 +1,9 @@
 /**
- * Created by ermak on 04.08.16.
+ * Created by ermak on 30.09.17.
  */
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
-import * as actions from "../actions";
+import * as actions from "../actions/editing";
 import SettingsModal from "../components/Modal/SettingsModal";
 
 const mapStateToProps = (state, ownProps) => {

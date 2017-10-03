@@ -1,9 +1,8 @@
 /**
  * Created by ermakof on 30.09.17.
  */
-import _ from "underscore";
 import * as C from "./../constants";
-import options from "./../../../../options";
+import options from "./../../../options";
 
 const initialStateStyles = (isOpen) => ({
     color: {

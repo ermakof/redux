@@ -10,11 +10,8 @@ import "./libs/bootstrap/css/bootstrap.css";
 import "../css/client.css";
 
 import i18next from "i18next";
-import "./react/panel/";
+import "./panel/";
 
 //todo тоит использовать 1 метод импорта
 require("font-awesome-webpack");
 require("../css/fonts/material-icons.css");
-
-//костыль,  вырванный из контекста
-window.clientType = 'admin';

@@ -3,7 +3,7 @@
  */
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
-import * as actions from "../actions";
+import * as actions from "../actions/selectMap";
 import MapSelect from "../components/MapSelect";
 
 const mapStateToProps = (state, ownProps) => {
