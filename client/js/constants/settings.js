@@ -5,42 +5,14 @@
 //todo такой формат вывода констант допустим, но не язвляется ли он черезмрено перегруженнным?
 const _eventVisibilityPopUpField = {
     "id":               "event-visibility-popup-field-id",
-    "name":             "event-visibility-popup-field-name",
-    "mac":              "event-visibility-popup-field-mac",
-    "deviceName":       "event-visibility-popup-field-deviceName",
-    "post":             "event-visibility-popup-field-post",
-    "area":             "event-visibility-popup-field-area",
-    "timeConfirmation": "event-visibility-popup-field-timeConfirmation",
-    "batteryLevel":     "event-visibility-popup-field-batteryLevel",
-    "signalLevel":      "event-visibility-popup-field-signalLevel"
 };
 
 const _eventTableField = {
     "num":              "event-table-field-num",
-    "id":               "event-table-field-id",
-    "mac":              "event-table-field-mac",
-    "deviceName":       "event-table-field-deviceName",
-    "name":             "event-table-field-name",
-    "time":             "event-table-field-time",
-    "managerName":      "event-table-field-managerName",
-    "timeConfirmation": "event-table-field-timeConfirmation",
-    "area":             "event-table-field-area"
 };
 
 const _devicePropsShow = {
     "title":        "device-props-show-title",
-    "devType":      "device-props-show-devType",
-    "mac":          "device-props-show-mac",
-    "carrier":      "device-props-show-carrier",
-    "isOnMap":      "device-props-show-isOnMap",
-    "battery":      "device-props-show-battery",
-    "imu":          "device-props-show-imu",
-    "features":     "device-props-show-features",
-    "location":     "device-props-show-location",
-    "state":        "device-props-show-state",
-    "cycle":        "device-props-show-cycle",
-    "version":      "device-props-show-version",
-    "ts":           "device-props-show-ts"
 };
 
 const _devicesPanelDeviceHeaderType = "devices-panel-device-header-type";
