@@ -2,8 +2,8 @@
  * Created by ermak on 30.09.17.
  */
 import _ from "underscore";
-import * as C from "./../constants";
-import options from "./../../../../options";
+import * as C from "../constants";
+import options from "./../../../options";
 
 const getMapNameById = (mapId, listMaps) => {
     if (_.isArray(listMaps) && listMaps.length > 0) {

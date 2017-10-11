@@ -1,8 +1,8 @@
 /**
  * Created by ermakof on 30.09.17.
  */
-import * as C from "./../constants";
-import options from "./../../../../options";
+import * as C from "../constants";
+import options from "./../../../options";
 
 const initialState = {
     rtMode: false,

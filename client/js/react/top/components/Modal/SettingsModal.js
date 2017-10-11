@@ -16,7 +16,6 @@ import {
     ControlLabel,
     Checkbox
 } from "react-bootstrap";
-import options from '../../../../../options'
 import {
     devicePropsShow,
     eventTableField,
@@ -31,7 +30,7 @@ import {
     mapDeviceVisibleLocationBt,
     graphPropsShow,
     areaPropsShow
-} from '../../../../../constants/settings'
+} from '../../../../constants/settings'
 
 import {
     NOTIFY_EVENTS_DANGER,

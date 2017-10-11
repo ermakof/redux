@@ -9,10 +9,7 @@ import "./libs/bootstrap/css/bootstrap-theme.css";
 import "./libs/bootstrap/css/bootstrap.css";
 import "../css/client.css";
 
-import i18next from "i18next";
-import "./react/panel/";
+import "./react/";
 
 require("font-awesome-webpack");
 require("../css/fonts/material-icons.css");
-
-window.clientType = 'admin';
