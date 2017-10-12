@@ -11,4 +11,3 @@ import "../css/client.css";
 
 require("font-awesome-webpack");
 require("../css/fonts/material-icons.css");
-
