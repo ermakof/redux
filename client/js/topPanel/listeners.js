@@ -12,4 +12,3 @@ export const startListeners = (redux) => {
     // которые будут передавать (dispatch) действия (actions) в хранилище (store)
 
 };
-
