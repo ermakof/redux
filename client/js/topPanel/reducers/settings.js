@@ -3,11 +3,11 @@
  */
 import i18next from "i18next";
 import * as C from "../constants";
-import options from "./../../../options";
+import options from "./../../options";
 
 import {
     commonLng,
-} from '../../../constants/settings'
+} from '../../constants/settings'
 
 const initialState = () => {
     let init = {

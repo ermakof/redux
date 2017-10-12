@@ -9,7 +9,6 @@ import App from "../components/App";
 const mapStateToProps = (state, ownProps) => {
     let p = state.topPanel;
     return {
-        mapRoot: p.rootMap.isOpen,
         idSelectedMap: state.mapSelect.idSelectedMap,
         listMaps: state.mapSelect.listMaps,
         referencePoint: p.referencePoint.visible

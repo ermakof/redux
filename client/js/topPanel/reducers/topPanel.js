@@ -2,7 +2,7 @@
  * Created by ermakof on 30.09.17.
  */
 import * as C from "../constants";
-import options from "./../../../options";
+import options from "./../../options";
 
 const initialStateStyles = (isOpen) => ({
     color: {
@@ -149,13 +149,7 @@ const initialEditGroupBtn = () => ({
     name: null
 });
 
-const initialStateRootMap = () => ({
-    isOpen: false,
-    disabled: false
-});
-
 const initialStateApp = () => ({
-    mapRoot: false
 });
 
 const initialState = {
@@ -167,7 +161,6 @@ const initialState = {
     selectSettings: initialStateSelectSettings(),
     editMapProps: initialStateEditMapProps(),
     info: initialStateInfo(),
-    rootMap: initialStateRootMap(),
     styles: initialStateStyles(false),
     exitGroupBtn: initialExitGroupBtn(),
     editGroupBtn: initialEditGroupBtn(),
@@ -305,18 +298,6 @@ const topPanel = (state = initialState, action) => {
             let mapId = action.payload;
             return newState;
         }
-        case C.UPDATE_PANEL_COLOR_BACKGROUND: {
-            let rgb = action.data.rgb;
-            let rgba = `rgba(${rgb.r},${rgb.g},${rgb.b},${rgb.a})`;
-            newState.styles.color.background = rgba;
-            return newState;
-        }
-        case C.UPDATE_PANEL_COLOR_FONT: {
-            let rgb = action.data.rgb;
-            let rgba = `rgba(${rgb.r},${rgb.g},${rgb.b},${rgb.a})`;
-            newState.styles.color.font = rgba;
-            return newState;
-        }
         case C.SHOW_PANEL: {
             let isOpen = action.isOpen;
             if (action.isLoad) {
@@ -350,14 +331,6 @@ const topPanel = (state = initialState, action) => {
         }
         case C.MAP_HOMEWARD: {
             return state;
-        }
-        case C.OPEN_MAP_ROOT: {
-            newState.rootMap.isOpen = true;
-            return newState;
-        }
-        case C.CLOSE_MAP_ROOT: {
-            newState.rootMap.isOpen = false;
-            return newState;
         }
         case C.EDITING_DATA__SELECT: {
             let item = action.itemSelectedMenu;

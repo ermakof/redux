@@ -3,7 +3,7 @@
  */
 import _ from "underscore";
 import * as C from "../constants";
-import options from "./../../../options";
+import options from "./../../options";
 
 const getMapNameById = (mapId, listMaps) => {
     if (_.isArray(listMaps) && listMaps.length > 0) {

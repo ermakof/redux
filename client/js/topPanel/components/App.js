@@ -16,7 +16,7 @@ class App extends Component {
     }
 
     render() {
-        const {t, idSelectedMap, listMaps, mapRoot, referencePoint} = this.props;
+        const {t, idSelectedMap, listMaps, referencePoint} = this.props;
         let leftGroup = null;
         let middleGroup = null;
         let rightGroup = null;

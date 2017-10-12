@@ -18,23 +18,10 @@ import {
 } from "react-bootstrap";
 import {
     devicePropsShow,
-    eventTableField,
-    eventVisibilityPopUpField,
     devicesPanelDeviceHeaderType,
-    mapDeviceExtendedInfoVisibility,
-    devicesPanelIntervalUpdate,
-    devicesPanelMaxRTMode,
-    devicesPanelTraceSteps,
     commonLng,
     mapDevicesClusterSize,
-    mapDeviceVisibleLocationBt,
-    graphPropsShow,
-    areaPropsShow
-} from '../../../../constants/settings'
-
-import {
-    NOTIFY_EVENTS_DANGER,
-} from '../../constants'
+} from '../../../constants/settings'
 
 const CUSTOM = "CUSTOM";
 
@@ -93,22 +80,8 @@ class Settings extends Component {
         let mask = "settings.devices.body.visibility";
         let flags = {
             devType: list[devicePropsShow.devType],
-            mac: list[devicePropsShow.mac],
-            title: list[devicePropsShow.title],
-            isOnMap: list[devicePropsShow.isOnMap],
-            battery: list[devicePropsShow.battery],
-            imu: list[devicePropsShow.imu],
-            features: list[devicePropsShow.features],
-            location: list[devicePropsShow.location],
-            state: list[devicePropsShow.state],
-            cycle: list[devicePropsShow.cycle],
-            version: list[devicePropsShow.version],
-            ts: list[devicePropsShow.ts],
-            carrier: list[devicePropsShow.carrier]
         };
-        let groupVisibilityCheck = null;
 
-        let groupTabCountInput = null;
         let dialog = <Modal
             show={true}
             onHide={() => close()}
@@ -167,24 +140,6 @@ class Settings extends Component {
                         <div styleName="tab-block-row">
                             <div styleName="tab-block-col">
                                 <FormGroup >
-                                    <ControlLabel>{t("settings.devices.body.location.visibility.title")}</ControlLabel>
-                                    <Checkbox onChange={setChecker}
-                                              checked={list[mapDeviceVisibleLocationBt]}
-                                              name={mapDeviceVisibleLocationBt}>{t("settings.devices.body.location.visibility.bluetooth")}</Checkbox>
-                                </FormGroup>
-                            </div>
-                            <div styleName="tab-block-col">
-                                <FormGroup >
-                                    <ControlLabel>{t("settings.devices.body.extendedInfo.title")}</ControlLabel>
-                                    <Checkbox onChange={setChecker}
-                                              checked={list[mapDeviceExtendedInfoVisibility]}
-                                              name={mapDeviceExtendedInfoVisibility}>{t("settings.devices.body.extendedInfo.visibility.title")}</Checkbox>
-                                </FormGroup>
-                            </div>
-                        </div>
-                        <div styleName="tab-block-row">
-                            <div styleName="tab-block-col">
-                                <FormGroup >
                                     <ControlLabel
                                         styleName="tab-block-col-header">{t("settings.devices.body.cluster.title")}</ControlLabel>
                                     <div>{t("settings.devices.body.cluster.size")}: {list[mapDevicesClusterSize]} </div>
@@ -222,63 +177,10 @@ class Settings extends Component {
                     <Tab eventKey={2} title={t("settings.area.title")}>
                         <h1>{t("settings.area.title")}</h1>
                         <hr/>
-                        <div styleName="tab-block-row">
-                            <div styleName="tab-block-col">
-                                <FormGroup >
-                                    <ControlLabel>{t("settings.area.choose")}: </ControlLabel>
-                                    <Checkbox onChange={setChecker}
-                                              checked={list[areaPropsShow.id]}
-                                              name={areaPropsShow.id}>{t("settings.area.id")}</Checkbox>
-                                </FormGroup>
-                            </div>
-                        </div>
                     </Tab>
                     <Tab eventKey={3} title={t("settings.graph.title")}>
                         <h1>{t("settings.graph.title")}</h1>
                         <hr/>
-                        <div styleName="tab-block-row">
-                            <div styleName="tab-block-col">
-                            </div>
-                        </div>
-                    </Tab>
-                    <Tab eventKey={4} title={t("settings.event.title")}>
-                        <h1>{t("settings.event.choose")}</h1>
-                        <hr/>
-                        <div styleName="tab-block-row">
-                            <div styleName="tab-block-col">
-                            </div>
-                            <div styleName="tab-block-col">
-                                <h5 styleName="tab-block-col-header">{t("settings.event.visibility.popups.props._title")}</h5>
-                                <FormGroup >
-                                    <ControlLabel>{t("settings.event.visibility.popups.props._choose")}:</ControlLabel>
-                                    <Checkbox onChange={setChecker}
-                                              checked={list[eventVisibilityPopUpField.id]}
-                                              name={eventVisibilityPopUpField.id}>{t("settings.event.visibility.popups.props.id")}
-                                    </Checkbox>
-                                </FormGroup>
-                            </div>
-                            <div styleName="tab-block-col">
-                                <h5 styleName="tab-block-col-header">{t("settings.event.visibility.table.column._title")}</h5>
-                                <FormGroup >
-                                    <ControlLabel>{t("settings.event.visibility.table.column._choose")}:</ControlLabel>
-                                    <Checkbox onChange={setChecker}
-                                              checked={list[eventTableField.num]}
-                                              name={eventTableField.num}>{t("settings.event.visibility.table.column.num")}</Checkbox>
-                                </FormGroup>
-                            </div>
-                        </div>
-                    </Tab>
-                    <Tab eventKey={5} title={t("settings.filters.title")}>
-                        <h1>{t("settings.filters.choose")}</h1>
-                        <hr/>
-                        <div styleName="tab-block-row">
-                            <div styleName="tab-block-col">
-                                {groupVisibilityCheck}
-                            </div>
-                            <div styleName="tab-block-col">
-                                {groupTabCountInput}
-                            </div>
-                        </div>
                     </Tab>
                 </Tabs>
             </Modal.Body>
